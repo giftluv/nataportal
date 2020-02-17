@@ -1,0 +1,55 @@
+CREATE TABLE IF NOT EXISTS `admin` (
+  `username` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `maspass` varchar(20) NOT NULL
+);
+
+INSERT INTO `admin` (`username`, `password`, `maspass`) VALUES
+('gift@admin', 'giftest1234', '1345');
+
+-- --------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS `last_entry` (
+  `id` int(1) NOT NULL,
+  `admNo` varchar(10) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`admNo`)
+); 
+INSERT INTO `last_entry` (`id`, `admNo`, `name`) VALUES
+(1, '1', 'Gift Aruchi');
+
+-- --------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS `user_id` (
+  `admNo` varchar(10) NOT NULL DEFAULT '',
+  PRIMARY KEY (`admNo`)
+); 
+
+-- --------------------------------------------------------
+CREATE TABLE IF NOT EXISTS `user_records` (
+  `admNo` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `homeAdd` varchar(50) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `nok` varchar(30) NOT NULL,
+  `phonenumber` varchar(13) NOT NULL,
+  `Dob` date NOT NULL,
+  `gender` varchar(6) NOT NULL,
+  `passportPhoto` varchar(50) NOT NULL,
+  `businessname` varchar(50) NOT NULL,
+  `kindofbusiness` varchar(100) NOT NULL,
+  `weeklyturnover` varchar(100) NOT NULL,
+  `noofapprenthes` varchar(5) NOT NULL,
+  `businessreferee` varchar(500) NOT NULL,
+  `shopaddress` varchar(150) NOT NULL,
+  `businessregistered` varchar(4) NOT NULL,
+  `IfYesWhen` varchar(50) NOT NULL,
+  `businessTime` varchar(30) NOT NULL,
+  `shopphoto` varchar(50) NOT NULL,
+  `bankname` varchar(100) NOT NULL,
+  `bankbranch` varchar(50) NOT NULL,
+  `accountname` varchar(50) NOT NULL,
+  `accountnumber` varchar(20) NOT NULL,
+  `bvn` varchar(15) NOT NULL,
+  PRIMARY KEY (`admNo`)
+);

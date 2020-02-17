@@ -1,0 +1,202 @@
+.main_section {
+	background-color:#ff5722;
+   
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer_section {
+    height: 0vh;
+    color: #ffffff;
+    text-align: center;
+    background: #333333;
+}
+
+.footer_section p {
+	font-size: 1rem
+}
+
+.container {
+    margin-top: 35px;
+    margin-left: 35px;
+    padding: 0 25px;
+    background: rgba(51, 51, 51, 0.61);
+    border-radius: 8px;
+    width: 50%;
+    border: 1px solid #333333;
+    min-height: 500px
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.67;
+    font-size: 14px;
+    overflow: hidden;
+    background: #333333;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+}
+
+h1 {
+    
+    font-size: 3rem;
+    color: #2ecc71;
+}
+
+h1 i {
+    font-size: 3.5rem !important;
+}
+
+p {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+a.btn {
+    display: inline-block;
+}
+
+.mar-r {
+    margin-right: 15px;
+}
+
+.btn {
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    background: #2ecc71;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-bottom: 25px;
+    min-width: 160px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #27ae60;
+    text-decoration: none;
+}
+
+
+/* Registration Form */
+
+.container_reg {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+    background: #ffff00;
+    background: rgba(51, 51, 51, 0.61);
+    border: 1px solid #333333;
+    padding: 15px;
+    color: #ffffff;
+}
+.container_reg h2{
+	text-align: center;
+}
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+
+/* Form Control  */
+.form-control {
+    display: block;
+    width: 90%;
+    height: 26px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+select{
+	height: 40px !important;
+	width:  97% !important;
+}
+
+a {
+	text-decoration: none;
+	color:#2ecc71
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/* Login Form */
+
+.container_log {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 400px;
+    background: #87CEEB;
+    background: rgba(51, 51, 51, 0.61);
+    border: 1px solid #ffffff;
+    padding: 15px;
+    color: #ffffff;
+}
+.container_reg h2{
+	text-align: center;
+}
+
+.text-center{
+	text-align: center;
+}
+<title>Official Bank Admin...</title>
